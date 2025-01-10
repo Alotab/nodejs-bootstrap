@@ -1,0 +1,4 @@
+VjG4MziCTPEqTcg2
+codingctrl
+
+mongodb+srv://codingctrl:<db_password>@cluster0.5er57.mongodb.net/

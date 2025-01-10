@@ -1,0 +1,1 @@
+// call backs are functions are the called inside another function to perfrom specific tasks
