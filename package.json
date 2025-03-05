@@ -20,12 +20,13 @@
   },
   "name": "bootstrap",
   "version": "1.0.0",
-  "main": "Redis/server.js",
+  "main": "social-media-microservices/api-gateway/src/server.js",
   "devDependencies": {},
 
   "scripts": {
     "test": "mocha",
-    "start": "node Redis/server.js"
+    "start": "node social-media-microservices/api-gateway/src/server.js",
+    "dev": "nodemon social-media-microservices/api-gateway/src/server.js"
   },
 
   "keywords": [],

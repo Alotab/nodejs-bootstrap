@@ -1,6 +1,4 @@
 const redis = require('redis');
-const { clone } = require('underscore');
-const { cli } = require('winston/lib/winston/config');
 
 const client = redis.createClient({
     host: 'localhost',
@@ -84,7 +82,7 @@ async function redisDataStructure(){
         console.log(getProductDetails)
 
         await client.hDel('product:1', 'rating');
-        
+
         const updatedProductDetail = await client.hGetAll('product:1');
         console.log(updatedProductDetail)
 
