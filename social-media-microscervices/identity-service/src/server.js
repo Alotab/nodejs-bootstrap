@@ -1,6 +1,7 @@
 require("dotenv").config();
 const mongoose = require("mongoose");
-const logger = require("./utils/logger");
+// const logger = require("./utils/logger");
+const logger = require("../utils/logger")
 const express = require("express");
 const helmet = require("helmet");
 const cors = require("cors");
@@ -33,6 +34,7 @@ app.use((req, res, next) => {
   next();
 });
 
+// install: rate-limiter-flexible
 //DDos protection and rate limiting
 const rateLimiter = new RateLimiterRedis({
   storeClient: redisClient,
